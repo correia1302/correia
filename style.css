@@ -70,8 +70,9 @@ border-botom:4px solid var(--verde);
     text-transform: uppercase;
 }
 .contador{
-    font-size:20px
-    text-align:center;
+    displey:flex;
+    justify-content:center;
+    flex-wrap:wrap;
 }
 .contador-digito{
     podding:0 16px;
