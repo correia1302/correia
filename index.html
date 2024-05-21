@@ -1,116 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus objetivos do ano</title>
+    <title>Gerador de senha</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <section class="conteudo-principal">
-        <h2 class="titulo-principal">Meus Objetivos do ano<span>_</span></h2>
-        <div class="conteudo">
-            <div class="botoes">
-                <button class="botao ativo">Passar de ano</button>
-                <button class="botao">ir no jogo</button>
-                <button class="botao">viajar</button>
-                <button class="botao">ir no cinema</button>
-            </div>
-            <div class="abas-textos">
-                <div class="aba-conteudo ativo">
-                    <h3 class="aba-conteudo-titulo-principal">passar de ano</h3>
-                    <h4 class="aba-conteudo-titulo-secundario">13-12-2024</h4>
-                    <div class="contador">
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="dias0">7</p>
-                            <p class="contador-digito-texto">dias</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="horas0">7</p>
-                            <p class="contador-digito-texto">horas</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="min0">7</p>
-                            <p class="contador-digito-texto">min</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="seg0">7</p>
-                            <p class="contador-digito-texto">seg</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="aba-conteudo">
-                    <h3 class="aba-conteudo-titulo-principal">ir no jogo</h3>
-                    <h4 class="aba-conteudo-titulo-secundario">13-02-2025</h4>
-                    <div class="contador">
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="dias1">7</p>
-                            <p class="contador-digito-texto">dias</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="horas1">7</p>
-                            <p class="contador-digito-texto">horas</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="min1">7</p>
-                            <p class="contador-digito-texto">min</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="seg1">7</p>
-                            <p class="contador-digito-texto">seg</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="aba-conteudo">
-                    <h3 class="aba-conteudo-titulo-principal">viajar</h3>
-                    <h4 class="aba-conteudo-titulo-secundario">16-09-2027</h4>
-                    <div class="contador">
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="dias2">7</p>
-                            <p class="contador-digito-texto">dias</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="horas2">7</p>
-                            <p class="contador-digito-texto">horas</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="min2">7</p>
-                            <p class="contador-digito-texto">min</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="seg2">7</p>
-                            <p class="contador-digito-texto">seg</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="aba-conteudo">
-                    <h3 class="aba-conteudo-titulo-principal">ir no cinema</h3>
-                    <h4 class="aba-conteudo-titulo-secundario">01-07-2024</h4>
-                    <div class="contador">
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="dias3">7</p>
-                            <p class="contador-digito-texto">dias</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="horas3">7</p>
-                            <p class="contador-digito-texto">horas</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="min3">7</p>
-                            <p class="contador-digito-texto">min</p>
-                        </div>
-                        <div class="contador-digito">
-                            <p class="contador-digito-numero" id="seg3">7</p>
-                            <p class="contador-digito-texto">seg</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <script src="main.js"></script>
+        <section class="conteudo">  
+            <div class="conteudo-titulo"> 
+            <img src="unlock.svg" alt="cadeado fechado">
+            <h2 class="titulo-principal">Gerador de senhas</h2>
+            <h3 class="titulo-secundario">Gere instantaneamente uma senha aleatória e segura</h3>
+        </div> 
+        <div class="conteudo-senha"> 
+            <label for="senha">Senha</label> 
+            <input name="senha" type="text" id="campo-senha"> 
+        </div> 
+            <div class="parametro"> 
+            <h3 class="parametro-titulo">Personalize sua senha</h3> 
+            <div class="parametro-coluna__senha"> 
+                <div class="parametro-senha"> 
+                    <h4 class="parametro-senha__titulo">Número de caracteres</h4>
+                     <div class="parametro-senha-botoes"> 
+                        <button class="parametro-senha__botao">-</button> 
+                        <p class="parametro-senha__texto">12</p> 
+                        <button class="parametro-senha__botao">+</button> 
+                        </div> 
+                </div>              
+                <div class="parametro-senha"> 
+                    <h4 class="parametro-senha__titulo">Características da senha</h4> 
+                </div> 
+                <div class="parametro-senha"> 
+                    <h4 class="parametro-senha__titulo">Força da senha</h4> 
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+    
 </body>
-
 </html>
